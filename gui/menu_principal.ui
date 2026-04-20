@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>App Ejercicios</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">/* Configuración General */
+QMainWindow {
+    background-color: #fdf2f5; /* Rosa muy pálido de fondo */
+    font-family: &quot;Segoe UI&quot;, &quot;Roboto&quot;, sans-serif;
+    font-size: 18pt;
+}
+
+/* Barra de Menú */
+QMenuBar {
+    background-color: #ffffff;
+    padding: 5px;
+    border-bottom: 1px solid #f2d1da;
+    font-size: 18pt;
+    color: #5d5d5d;
+}
+
+QMenuBar::item {
+    background-color: transparent;
+    padding: 8px 15px;
+    border-radius: 4px;
+}
+
+QMenuBar::item:selected {
+    background-color: #fce4ec; /* Rosa suave al pasar el mouse */
+    color: #d81b60; /* Rosa acentuado */
+}
+
+/* Menús Desplegables */
+QMenu {
+    background-color: #ffffff;
+    border: 1px solid #f2d1da;
+    padding: 5px;
+    font-size: 18pt;
+}
+
+QMenu::item {
+    padding: 10px 30px 10px 20px;
+    border-radius: 4px;
+    color: #4a4a4a;
+}
+
+QMenu::item:selected {
+    background-color: #f8bbd0; /* Tono rosa medio */
+    color: #ffffff;
+}
+
+QMenu::separator {
+    height: 1px;
+    background: #f2d1da;
+    margin: 5px 10px;
+}
+
+/* Acciones (QAction se hereda de las propiedades de QMenu) */
+/* Estilo adicional para widgets centrales si los hubiera */
+QWidget {
+    font-size: 18pt;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>59</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuEjercicios">
+    <property name="title">
+     <string>Ejercicios</string>
+    </property>
+    <addaction name="actionejer1"/>
+    <addaction name="actionejer2"/>
+    <addaction name="separator"/>
+    <addaction name="actionSalir"/>
+   </widget>
+   <addaction name="menuEjercicios"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionejer1">
+   <property name="text">
+    <string>ejer1</string>
+   </property>
+  </action>
+  <action name="actionejer2">
+   <property name="text">
+    <string>ejer2</string>
+   </property>
+  </action>
+  <action name="actionSalir">
+   <property name="text">
+    <string>Salir</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
